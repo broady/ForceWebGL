@@ -1,0 +1,14 @@
+{
+  "name": "Force Maps API WebGL Street View",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["hook.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
